@@ -1,0 +1,60 @@
+/* Base styles */
+h1 {
+	color: white;
+	text-align: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem; /* Use a relative font size */
+  margin-bottom: 1rem; /* Add some spacing between elements */
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  font-size: 1.5rem;
+  max-width: 500px;
+  margin: Auto;
+}
+
+.field {
+  min-width: 20%; /* Use percentage units for sizing */
+  min-height: 10%;
+  margin: 1rem;
+  color: white;
+}
+
+button {
+  //height: Auto;
+  max-width: 500px;
+  outline: none;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  font-size: 1.75rem; /* Use a relative font size */
+  }
+
+button:active {
+  background: blue;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  /* Adjust layout for screens smaller than 768px */
+  .field {
+    min-width: 45%; /* Use larger percentage units to fit more elements on a row */
+    min-height: 15%;
+    margin: 0.5rem;
+  }
+  
+  button {
+    font-size: 2rem; /* Use a smaller font size for readability */
+  }
+}
+
+html, body {
+  background: url("./StarlitSky.png");	
+  
+}
