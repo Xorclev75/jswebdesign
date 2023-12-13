@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--====== Title ======-->
+    <title>Derpy Dog Designs</title>
+	<!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/derpy.jpg" type="image/jpg">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<link rel="stylesheet" href="https://joshuaschwartzkopf.w3spaces.com/assets/css/jquery-style.css">
+  <link rel="stylesheet" href="https://joshuaschwartzkopf.w3spaces.com/assets/css/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>  
+$(function() {
+  $("#accordion").accordion({
+    heightStyle: "content",
+    collapsible: true,	
+  });
+});
+ // JavaScript Date Range code
+        function displayDateRange() {
+            var currentDate = new Date();
+            var dateElements = document.getElementsByClassName("date");
+
+            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+            for (var i = 0; i <= 6; i++) {
+                var date = new Date(currentDate);
+                date.setDate(currentDate.getDate() - i);
+                dateElements[i].innerHTML = date.toLocaleDateString(undefined, options);
+            }
+        }
+
+  </script>
+<style>
+.center {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  
+}
+
+header {
+  background-color: #000066;
+  color: #fff;
+  padding: 12px;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+  /*justify-content: flex-end; /* Positions content on the right side */
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+section {
+  flex: 2;
+  margin-right: 10px;
+}
+
+aside {
+  flex: 1;
+    }
+
+.news {
+background-color: #aaa;
+  color: black;
+  padding: 15px;
+}
+
+footer {
+  background-color: #aaa;
+  color: black;
+  padding: 5px;  
+}
+
+.dog {
+  width:200px; 
+  height: 250px;
+  border-radius: 25px;
+  float: left;
+  margin: 0 0 10px 10px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.hero {
+width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    background-image: url("/assets/images/painting.svg");
+    background-size: cover;    
+    background-position: center;
+}
+
+.caption {
+  text-align: center;
+  font-style: italic;
+  padding: 1px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  
+  aside {
+    order: 2;
+  }
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+	background-color: #aaa;
+  }
+
+  h3 {
+    text-align: center;
+    background-color: #aaa;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+<!--<div class="hero"></div>-->
+  <header>
+    <h1 class="center">Derpy Dog Website</h1>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/assets/images/derpy.jpg" type="image/jpg">
+  </header>
+  <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+  
+  <main>
+    
+    <section>
+	
+  <h2>Welcome to Derpy Dog</h2>
+  <div style="float: left; margin-right: 10px;">
+    <table>
+      <tr>
+        <td>
+          <img class="dog" src="/assets/images/derpy.jpg" alt="derpy dog">
+        </td>
+      </tr>
+      <tr>
+        <td class="caption">Derpy Dog</td>
+      </tr>
+    </table>
+  </div>
+  <p class="date"></p>
+  <p>I saw a cat chasing its own tail today.  I thought I would give it a try.  That tail is pretty darn elusive.  I snapped at it a couple times but each time it escaped me.  I was about to give up when someone bit my tail!  I was really mad because it hurt a lot!  I looked around though and didn&#8217;t see anyone.  But I know someone bit my tail...<p></br>
+  <p class="date"></p>
+  <p>Today the lady dropped a piece of macaroni on the floor and I ate it.  And then the guy dropped a strawberry which I also ate.  Later on he dropped a piece of broccoli which happened while I was outside but they were nice enough to leave it on the floor so I could gobble it up when I came back inside.  Today was a good day!<p></br>
+  <p class="date"></p>
+<p>Sometimes I ponder the meaning of life and existence as we know it.  I lie there in my doggie bed and I postulate why are we here? What is our purpose? Is there a giant dog house in the sky? And if there is, who lives in said dog house? Is it all the good dogs? What happens to the bad dogs?  That&#8217;s a silly question.  There are no bad dogs.  I wonder what cat tastes like?</p> </br>
+   <p class="date"></p>
+<p>I awoke in a panic this morning.  My alarm did not go off and I had a very important business meeting with a prospective client.  And to make matters worse I completely forgot the client&#8217;s name.  Plus I couldn&#8217;t find a thing to wear and I misplaced my car keys and I never even got my driver&#8217;s license.  But then I realized I&#8217;m just a dog and went back to licking my butt.</p>
+  <div style="clear: both;"></div>
+</section>
+
+    <aside>
+      	  <h3>Previous Posts</h3>
+      <div id ="accordion">
+	  <h3 class="date"></h3>
+        <p class="news">I almost caught a squirrel this morning in the backyard.  The human let me out after I glared at him for a very long time.  I had to whine, so beneath me, but he finally got the point and let me out.  However, I digress, I stepped outside and there was that confounded squirrel.  He was finishing up a nut or a leaf or whatever stupid things squirrels eat and then he spotted me.  And that squirrel had the audacity to make stupid squirrel faces at me before he scampered up the wooden fence and into the trees where he sat taunting me and reminding me that I do not know who my father was.  I hate squirrels!</p>
+        <h3 class="date"></h3>
+        <p class="news">Another day, and no one gave me pets or treats.  It&#8217;s a ruff life I tell you!  Well, ok, the tiny humans gave me some pets when they woke up but the big humans ignored me!  Do they even understand what I do for this family? I guard the house from cats and squirrels and burglars and squirrels - wait, did I already say squirrels? I don&#8217;t know why the squirrels even want to get inside the house but it ain&#8217;t going to happen on my watch!  Give me pets and treats, darnit!!</p>
+		<h3>Blog Email Sign-Up</h3>
+<div class="form-container">
+  <form action="/submit_contact_form" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="phone" id="phone" name="phone">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>		
+		</div> <!-- accordion -->
+    </aside>
+  </main>
+  <footer>
+    <p class="center">&copy; 2023 Derpy Dog. All rights reserved.</p>
+  </footer>
+</div>
+<script>
+        // Call the function to display the date range
+        displayDateRange();
+    </script>
+</body>
+</html>

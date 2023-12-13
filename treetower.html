@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>Tree Tower Web Design</title>
+   
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="https://joshuaschwartzkopf.w3spaces.com/assets/images/TreeTower.jpg" type="image/jpg">
+	
+<style>
+.background-container {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://joshuaschwartzkopf.w3spaces.com/assets/images/TreeTower.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
+  background-size: cover;
+  animation: zoomin 10s infinite alternate;
+  overflow: hidden;
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+h1 {
+  color: #a3a3c2;
+  text-align: center;
+  font-size: 2.46em;
+  text-shadow: 1px 1px 2px gray;
+  background-color: black;
+  position: sticky;
+}
+
+.center {
+  color: #fff;
+  text-align: center;  
+  font-size: 1.46em;
+  text-shadow: #FC0 1px 0 10px;
+  position: sticky;
+  background-color: rgba(0, 0, 0, 0.25);    
+}
+
+.bottom {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Adjust the style for the hamburger */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff; /* White color for better visibility */
+  position: absolute; /* Position the hamburger icon */
+  top: 15px;
+  left: 15px;
+  z-index: 2; /* Place above the sidebar */
+}
+
+/* Adjust the style for the sidebar */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  //background-color: #47476b; 
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: #fff; /* White color for the links */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, a:active {
+  text-shadow: #FC0 1px 0 10px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #fff; /* White color for the close button */
+}
+
+/* Adjust the style for the content area */
+  section {
+  padding-top: 20px; /* Leave space for the open button */
+  color: #fff; /* White color for the text */
+}
+
+@media screen and (min-width: 768px) {
+  .background-container {
+    animation: zoomout 10s forwards; /* Adjust the duration as needed */
+  }
+
+  @keyframes zoomout {
+    0% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+   /* Adjust the font size for h1 and .center on desktop */
+  h1 {
+    font-size: 3em; /* Adjust as needed */
+  }
+
+  .center {
+    font-size: 1.8em; /* Adjust as needed */
+  }
+}
+  
+.span-overlay {
+  background-color: rgba(0, 0, 0, 0.25); /* Adjust opacity and color as needed */
+  
+} 
+</style>
+</head>
+<body>
+  <div class="background-container"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://joshuaschwartzkopf.w3spaces.com/monolith.html" target="_blank">&#x2022; Monolith Design</a>
+  <a href="https://joshuaschwartzkopf.w3spaces.com/future-monolith.html" target="_blank">&#x2022; Futuristic Monolith Design</a>
+  <a href="https://joshwebdev.com/dark-mode.html" target="_blank">&#x2022; Dark Mode</a>
+  <a href="https://joshwebdev.com/blog.html" target="_blank">&#x2022; Derpy Dog</a>
+  
+  </div>
+
+  <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+  <section>
+    <h1>Tree Tower Web Design</h1>
+    <p class="center">Reliable. Creative. Distinct.</p>
+  </section>
+
+  <div class="bottom">
+    <p class="center">&copy; 2023 TTWD. All rights reserved.</p>
+  </div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>

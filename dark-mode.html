@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josh Schwartzkopf - Web Dev</title>
+ <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/jpg">
+</head>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column; /* Ensure elements are stacked vertically */
+  flex-wrap: wrap; /* Allow elements to wrap when there's not enough space */
+}
+
+h1 {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1px;
+}
+
+/* 2x2 grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.cell {
+  padding: 20px;
+  /*border: 1px solid #ccc;*/
+}
+
+/* Light mode styles (default) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+/* Dark mode styles for header background */
+body.dark-mode header {
+  background-color: #333333;
+}
+
+/* Dark mode styles for button */
+body.dark-mode #darkModeToggle {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles for link */
+body.dark-mode a {
+  color: #ffcc00;
+}
+
+.image-mask {
+      display: block;
+	  width: 100%;
+      height: auto;
+      object-fit: cover;	 
+	  mask-image: url("assets/images/hero-mug.png");
+	  mask-size: cover;
+	  mask-repeat: no-repeat;
+  }
+  
+  .navbar {
+  display: flex;
+  background-color: #333;
+  /*justify-content: flex-end; /* Positions content on the right side */
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Styles for smaller devices (e.g., max-width: 768px) */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .image-mask {
+    object-fit: contain;
+  }
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle; /* Adjust this as needed */
+  margin-right: 10px; /* This adds some space between the image and the text */
+}
+
+.header-title {
+  display: inline-block;
+  vertical-align: middle; /* Adjust this as needed */
+}
+
+.button-container {
+  text-align: center; /* This will center the button within the container */
+}
+
+.custom-button {
+  padding: 10px 20px; /* Adjust the padding as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  cursor: pointer; /* Changes the cursor to a hand when hovering over the button */
+  border: none; /* Removes the default border */
+  background-color: #007BFF; /* Background color of the button */
+  color: #ffffff; /* Text color of the button */
+  transition: background-color 0.3s ease; /* Transition effect for smooth color change */
+  border-radius: 5px;
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Background color of the button on hover */
+}
+
+.form-container {
+    max-width: 600px; /* You can adjust this as needed */
+    margin: 20px auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+	color: #000;
+}
+
+input,
+textarea {    
+	width: 95%; /* Reduce width to add some space to the right */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	resize: none;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    margin: 0 auto; /* Centers the submit button */
+}
+
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Additional styling for the phone input field */
+input[type="tel"] {
+    padding-right: 10px; /* This leaves space for the pattern hint */
+} 
+
+.required {
+  color: red;
+} 
+
+</style>
+<body>
+  <header> 
+  <!--<img src="assets/images/newlogo.svg" alt="icon" class="icon" />-->
+<h1>Josh Web Dev</h1>  
+    <button id="darkModeToggle">Toggle Dark Mode</button>	
+  </header>
+  <nav>
+  <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">Experience</a>
+      <a href="#">Services</a>
+      <a href="#">Games</a>
+    </div>
+	</nav>
+  <main>
+  
+    <div class="grid">
+	<div class="cell"><img class="image-mask" src="assets/images/hero-mug.png" alt="hero"></div>
+      <div class="cell"><h2>Hello!</h2>
+	  <p>Having worked with major corporations and various government entities for nearly a decade, I feel confident that I can help you make the perfect website.  Not just a page on the Internet with your logo and name on it, but a place where people can experience what your business has to offer.</p>
+	  <p>My name is Josh Schwartzkopf and I'm a freelance web developer and designer.  Are you in the market for a new website? Or maybe you already have a site that just isn't producing the results you'd hoped for?  Do you have a form that needs updating but the user interface to edit the form is less than user friendly? Do your web pages feel a bit vanilla? Maybe your content needs some freshening up? If you answered "Yes" to any of these questions, please fill out the Contact Form below and let's work together to make your website better!</p>	  
+	  
+	 <div class="form-container">
+  <form action="/submit_contact_form" method="post">
+    <label for="name">Name: <span class="required" title="* indicates a required field">*</span></label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email: <span class="required" title="* indicates a required field">*</span></label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" pattern="\d{3}-?\d{3}-?\d{4}" placeholder="###-###-#### or ##########">
+
+    <label for="message">Message: <span class="required" title="* indicates a required field">*</span></label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</div>
+
+
+</div>   
+     
+      
+    </div>
+  </main>
+  <footer>
+  <p>&copy; 2023 Josh Schwartzkopf. All rights reserved.</p>
+  </footer>
+  <script>
+  const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.body;
+
+darkModeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+});
+
+document.querySelector('.form-container form').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  // Clear the form
+  this.reset();
+
+  // Show the thank you message as an alert
+  alert('Thank you for contacting me!');
+});
+
+
+
+  </script>
+
+
+</body>
+</html>
